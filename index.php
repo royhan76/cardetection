@@ -7,6 +7,7 @@ include "config.php";
 <!doctype html>
 
 <html>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
 <body>
 
@@ -28,11 +29,13 @@ include "config.php";
 
 
 
-    End Date <input type='datetime-local' class='dateFilter' name='endDate' value='<?php if (isset($_POST['endDate'])) echo $_POST['endDate']; ?>'>
+    End Date <input type='datetime-local' class='dateFilter ' name='endDate' value='<?php if (isset($_POST['endDate'])) echo $_POST['endDate']; ?>'>
 
 
 
-    <input type='submit' name='but_search' value='Search'>
+
+    <button type="submit" name='but_search' value='Search' class="btn btn-primary"> Filter </button>
+
 
 
 
